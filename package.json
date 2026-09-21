@@ -26,7 +26,7 @@
 	},
 	"keywords": [],
 	"author": "5dt1 <contact@5dt1.com>",
-	"license": "ISC",
+	"license": "MIT",
 	"build": {
 		"appId": "com.5dt1.musicdownloader",
 		"productName": "Music Downloader",
