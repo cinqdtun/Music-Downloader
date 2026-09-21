@@ -1,0 +1,159 @@
+{
+	"screen_loading": {
+		"title": "Loading",
+		"description": "Please wait while your application is loading."
+	},
+	"download": {
+		"progress": "Download progress"
+	},
+	"playlist": {
+		"tracks": "Tracks:"
+	},
+	"platforms": {
+		"label": "Platform",
+		"yt_music": "YouTube Music"
+	},
+	"settings": {
+		"title": "Settings",
+		"catgeories": {
+			"general": {
+				"title": "General",
+				"lang": {
+					"title": "Language",
+					"description": "Change application language (require a restart)",
+					"items": {
+						"system": "System (default)",
+						"en": "English",
+						"fr": "French"
+					}
+				},
+				"adblocker": {
+					"title": "Ad Blocker",
+					"description": "Browse and add tracks without interruptions."
+				},
+				"autosave": {
+					"title": "Auto save",
+					"description": "Protects unsaved changes by saving your playlist state after every edit."
+				}
+			},
+			"playlist": {
+				"title": "Playlist",
+				"open": {
+					"title": "Open",
+					"description": "Load an existing playlist file from your computer."
+				},
+				"save": {
+					"title": "Save",
+					"description": "Save the current playlist on your device."
+				},
+				"saveas": {
+					"title": "Save As",
+					"description": "Save a copy of the current playlist under a new name or location."
+				}
+			},
+			"download": {
+				"title": "Download",
+				"defaultloc": {
+					"title": "Default location",
+					"description": "Destination folder for all downloaded songs.",
+					"location": "Current Location:"
+				},
+				"format": {
+					"title": "Format",
+					"description": {
+						"text": "Select the audio format for downloaded tracks:",
+						"formats": {
+							"opus": {
+								"text": "Opus:",
+								"description": "Highest quality (native YouTube stream, zero re-encoding; best for modern players)"
+							},
+							"mp3": {
+								"text": "MP3:",
+								"description": "Universal compatibility (works on all legacy players and car stereo)"
+							},
+							"m4a": {
+								"text": "M4A:",
+								"description": "Fast and versatile (native AAC stream, instant save, native on iOS, Android, and Windows)"
+							}
+						}
+					},
+					"items": {
+						"title": "Formats",
+						"mp3": {
+							"label": "MP3",
+							"tag": "(Recommanded for compatibility)"
+						},
+						"m4a": {
+							"label": "M4A"
+						},
+						"opus": {
+							"label": "Opus",
+							"tag": "(Highest quality)"
+						}
+					}
+				},
+				"embedtags": {
+					"title": "Embed tags",
+					"description": "Saves artist, title, and album metadata into the file."
+				},
+				"embedthumbnail": {
+					"title": "Embed thumbnail",
+					"description": "Embeds album artwork as the file's cover art."
+				},
+				"forceipv4": {
+					"title": "Force IPv4",
+					"description": "Workaround if downloads fail: bypasses YouTube's stricter rate-limits and blocks on IPv6."
+				},
+				"output": {
+					"title": "Output",
+					"items": {
+						"artistandtitle": {
+							"title": "Artist & Title",
+							"description": {
+								"text": "Songs prefixed with artist: ",
+								"format": "Artist - Title.ext"
+							}
+						},
+						"flat": {
+							"title": "Flat",
+							"description": {
+								"text": "Songs saved directly in folder: ",
+								"format": "Title.ext"
+							}
+						},
+						"subfolder": {
+							"title": "Subfolders",
+							"description": {
+								"text": "Sorted into folders: ",
+								"format": "Artist/Title.ext"
+							}
+						}	
+					}
+				},
+				"downloadargs": {
+					"title": "Arguments",
+					"description": "Pass custom flags directly to yt-dlp. Advanced users only—invalid flags may cause downloads to fail.",
+					"placeholder": "Enter args"
+				}
+			}
+		}
+	},
+	"unsavedchanges": {
+		"title": "Unsaved Changes",
+		"description": "You have unsaved changes are you sure you still want to quit ?"
+	},
+	"common": {
+		"buttons" : {
+			"cancel": "Cancel",
+			"save": "Save",
+			"saveas": "Save As",
+			"open": "Open",
+			"quit": "Quit"
+		}
+	},
+	"toasts": {
+		"postprocessfailed": "Post processing issue on downloaded track. Skipping.",
+		"downloadfailed": "Failed to download playlist.",
+		"downloadsuccess": "Successfully downloaded playlist !"
+	}
+}

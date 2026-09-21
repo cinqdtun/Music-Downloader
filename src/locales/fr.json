@@ -1,0 +1,159 @@
+{
+	"screen_loading": {
+		"title": "Chargement",
+		"description": "Merci de patienter pendant que l'application charge."
+	},
+	"download": {
+		"progress": "Progression du téléchargement"
+	},
+	"playlist": {
+		"tracks": "Titres:"
+	},
+	"platforms": {
+		"label": "Platforme",
+		"yt_music": "YouTube Music"
+	},
+	"settings": {
+		"title": "Paramètres",
+		"catgeories": {
+			"general": {
+				"title": "Général",
+				"lang": {
+					"title": "Language",
+					"description": "Change la langue de l'application (nécessite un redémarrage)",
+					"items": {
+						"system": "Système (par défaut)",
+						"en": "Anglais",
+						"fr": "Français"
+					}
+				},
+				"adblocker": {
+					"title": "Bloqueur de publicité",
+					"description": "Naviguez et ajoutez des titres sans interruptions."
+				},
+				"autosave": {
+					"title": "Sauvegarde automatique",
+					"description": "Sauvegarde la playlist après chaque modification pour eviter de perdre les changements."
+				}
+			},
+			"playlist": {
+				"title": "Playlist",
+				"open": {
+					"title": "Ouvrir",
+					"description": "Charge une playlist existante depuis l'ordinateur."
+				},
+				"save": {
+					"title": "Sauvegarder",
+					"description": "Sauvegarde la playlist actuelle sur votre ordinateur."
+				},
+				"saveas": {
+					"title": "Enregistrer sous",
+					"description": "Sauvegarde une copie de votre playlist sous un nouveau nom ou emplacement."
+				}
+			},
+			"download": {
+				"title": "Téléchargements",
+				"defaultloc": {
+					"title": "Emplacement par défaut",
+					"description": "Emplacement des titres téléchargés.",
+					"location": "Emplacement actuel:"
+				},
+				"format": {
+					"title": "Format audio",
+					"description": {
+						"text": "Selectionnez le format audio des titres téléchargés:",
+						"formats": {
+							"opus": {
+								"text": "Opus:",
+								"description": "Meilleure qualité (flux YouTube natif, zéro réencodage; recommandé pour les appareils récents)"
+							},
+							"mp3": {
+								"text": "MP3:",
+								"description": "Compatibilité universelle (fonctionne sur tous les appareils)"
+							},
+							"m4a": {
+								"text": "M4A:",
+								"description": "Rapide et polyvalent (flux AAC natif, enregistrement instantanée, compatible avec iOS, Android et Windows)"
+							}
+						}
+					},
+					"items": {
+						"title": "Formats audio",
+						"mp3": {
+							"label": "MP3",
+							"tag": "(Recommandé pour une compatibilité maximale)"
+						},
+						"m4a": {
+							"label": "M4A"
+						},
+						"opus": {
+							"label": "Opus",
+							"tag": "(Meilleure qualité)"
+						}
+					}
+				},
+				"embedtags": {
+					"title": "Inclure les métadonnées",
+					"description": "Enregistre l'artiste, le titre et l'album dans les métadonnées du fichier."
+				},
+				"embedthumbnail": {
+					"title": "Inclure le visuel de l'album",
+					"description": "Intègre le visuel de l'album dans le fichier."
+				},
+				"forceipv4": {
+					"title": "Forcer IPv4",
+					"description": "Force IPv4 pour éviter les blocages et restrictions plus stricts de YouTube sur IPv6."
+				},
+				"output": {
+					"title": "Formattage",
+					"items": {
+						"artistandtitle": {
+							"title": "Artiste & Titre",
+							"description": {
+								"text": "Les titres commencent avec l'artiste: ",
+								"format": "Artiste - Titre.ext"
+							}
+						},
+						"flat": {
+							"title": "Simple",
+							"description": {
+								"text": "Titres directement téléchargés dans le dossier",
+								"format": "Titre.ext"
+							}
+						},
+						"subfolder": {
+							"title": "Sous-dossiers",
+							"description": {
+								"text": "Titres rangés par sous-dossier :",
+								"format": "Artiste/Titre.ext"
+							}
+						}	
+					}
+				},
+				"downloadargs": {
+					"title": "Arguments",
+					"description": "Passez directement des arguments à yt-dlp. Réservé aux utilisateurs avancés. Des arguments incorrects peuvent provoquer des erreurs de téléchargement.",
+					"placeholder": "Entrez des arguments"
+				}
+			}
+		}
+	},
+	"unsavedchanges": {
+		"title": "Modifications non sauvegardées",
+		"description": "Vous avez des modifications non sauvegardées. Êtes-vous sûr de vouloir quitter ?"
+	},
+	"common": {
+		"buttons" : {
+			"cancel": "Annuler",
+			"save": "Sauvegarder",
+			"saveas": "Enregistrer sous",
+			"open": "Ouvrir",
+			"quit": "Quitter"
+		}
+	},
+	"toasts": {
+		"postprocessfailed": "Problème lors du post-traitement du titre téléchargé. Titre ignoré.",
+		"downloadfailed": "Echec du téléchargement de la playlist",
+		"downloadsuccess": "Playlist téléchargée avec succès!"
+	}
+}
