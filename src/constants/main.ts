@@ -19,7 +19,7 @@ export const FORWARD_CD = 2000;
 export const INJECTOR_PATH = path.join(__dirname, "../preload/injector.js");
 export const PRELOAD_PATH = path.join(__dirname, '../preload/preload.js');
 
-export const ICON_PATH = path.join(__dirname, '../../assets/logo1024x1024.png');
+export const ICON_PATH = path.join(__dirname, '../../assets/icons/1024x1024.png');
 
 export const CONSENT_COOKIE_NAME = "SOCS";
 export const CONSENT_COOKIE_VALUE = "CAESNQgREitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjYwOTA2LjA1X3AwGgJlbiACGgYIgOfB1QY";

@@ -35,6 +35,7 @@
 		},
 		"files": [
 			"dist/**/*",
+			"assets/icons/1024x1024.png",
 			"package.json"
 			],
 		"extraResources": [
@@ -56,7 +57,7 @@
 				"deb"
 			],
 			"category": "AudioVideo",
-			"icon": "assets/icons/1024x1024.png"
+			"icon": "assets/icons"
 		}
 	},
 	"allowScripts": {
