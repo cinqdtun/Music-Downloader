@@ -103,8 +103,8 @@ export default function App() {
 	return (
 		<div className="w-screen h-screen overflow-hidden bg-black">
 			<div className={`dark text-foreground w-screen h-screen flex flex-col scheme-dark overflow-hidden ${isBlurred ? 'blur-sm' : ''}`}>
-				<div className="border-r border-border bg-background flex flex-1 flex-col p-4 min-h-0">
-					<div className='gap-4 flex flex-col overflow-y-auto overflow-x-hidden scrollbar-gutter-stable flex-1 min-h-0'>
+				<div className="border-r border-border bg-background flex flex-col flex-1 min-h-0 overflow-y-auto overflow-x-hidden scrollbar-gutter-both">
+					<div className='flex flex-col py-[calc((100vw-100%)/2)] w-full min-h-full shrink-0 gap-4'>
 						{ 
 							musics.map((music: Music, i) => (
 								<MusicCard
