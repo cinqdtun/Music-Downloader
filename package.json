@@ -16,13 +16,13 @@
 		"typescript": "^7.0.2"
 	},
 	"scripts": {
-			"clean": "rm -rf ./bin && rm -rf ./dist && rm -rf ./dist-packaged",
-			"lint": "tsc --noEmit",
-			"dev": "electron-vite dev -w",
-			"build:linux": "npm run lint && cross-env TARGET_PLATFORM=linux TARGET_ARCH=x64 electron-vite build",
-			"package:linux": "npm run clean && npm run build:linux && electron-builder --linux --x64",
-			"build:win": "npm run lint && cross-env TARGET_PLATFORM=win32 TARGET_ARCH=x64 electron-vite build",
-			"package:win": "npm run clean && npm run build:win && electron-builder --win --x64"
+		"clean": "rm -rf ./bin && rm -rf ./dist && rm -rf ./dist-packaged",
+		"lint": "tsc --noEmit",
+		"dev": "electron-vite dev -w",
+		"build:linux": "npm run lint && cross-env TARGET_PLATFORM=linux TARGET_ARCH=x64 electron-vite build",
+		"package:linux": "npm run clean && npm run build:linux && electron-builder --linux --x64",
+		"build:win": "npm run lint && cross-env TARGET_PLATFORM=win32 TARGET_ARCH=x64 electron-vite build",
+		"package:win": "npm run clean && npm run build:win && electron-builder --win --x64"
 	},
 	"keywords": [],
 	"author": "5dt1 <contact@5dt1.com>",

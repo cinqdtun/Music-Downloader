@@ -144,7 +144,6 @@ function onPlayerAdded(element: Element) {
 		minifiedControlsComponent.style.removeProperty('display');
 		minifiedControlsComponent.style.zIndex = '103'; // Magic value present in original code
 		minifiedControlsComponent.style.opacity = '1';
-		minifiedControlsComponent.style.pointerEvents = 'auto';
 	}
 
 	const minifiedRepeatComponent: HTMLElement | null = document.querySelector(PLAYER_MINIFIED_REPEAT_SELECTOR);
@@ -163,6 +162,7 @@ function onPlayerAdded(element: Element) {
 	
 	if (minifiedVolumeSliderComponent) {
 		minifiedVolumeSliderComponent.style.display = 'none';
+		minifiedVolumeSliderComponent.style.pointerEvents = 'auto';
 	}
 	
 	const minifiedVolumeComponent: HTMLElement | null = document.querySelector(PLAYER_MINIFIED_VOLUME_SELECTOR);
@@ -173,6 +173,8 @@ function onPlayerAdded(element: Element) {
 	};
 
 	if (minifiedVolumeComponent) {
+		minifiedVolumeComponent.style.pointerEvents = 'auto';
+
 		minifiedVolumeComponent.onmouseenter = () => {
 			if (minifiedVolumeSliderComponent) {
 				minifiedVolumeSliderComponent.style.removeProperty('display');
