@@ -20,6 +20,7 @@ import {
 	PLAYER_REPEAT_SELECTOR, 
 	PLAYER_SELECTOR, 
 	PLAYER_SHUFFLE_SELECTOR, 
+	PLAYER_TITLE_SELECTOR, 
 	TOASTER_ROOT_COMPONENT } from '@/constants/shared'
 import { 
 	toast, 
@@ -83,7 +84,9 @@ function onPlayerStatesChange(states: PlayerStates) {
 }
 
 function onMusicChange(states: PlayerStates) {
-	if (states.isPlayerActive && !states.isAd) {
+	const title = document.querySelector(PLAYER_TITLE_SELECTOR)?.textContent;
+
+	if (states.isPlayerActive && !states.isAd && title && title.trim().length > 0) {
 		// New music
 		const interval = setInterval(async () => {
 			const music = await getMusic();

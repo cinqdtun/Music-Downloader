@@ -58,6 +58,7 @@ export const PLAYER_SELECTOR = "#layout > ytmusic-player-bar";
 export const PLAYER_STATE_SELECTOR = "#layout";
 export const PLAYER_AD_SELECTOR = "ytmusic-player-bar > div.middle-controls.style-scope.ytmusic-player-bar > div.content-info-wrapper.style-scope.ytmusic-player-bar > span > span";
 export const PLAYER_THUMBNAIL_SELECTOR = "#layout > ytmusic-player-bar > div.middle-controls.style-scope.ytmusic-player-bar > div.thumbnail-image-wrapper.style-scope.ytmusic-player-bar > img";
+export const PLAYER_TITLE_SELECTOR = "#layout > ytmusic-player-bar > div.middle-controls.style-scope.ytmusic-player-bar > div.content-info-wrapper.style-scope.ytmusic-player-bar > yt-formatted-string";
 
 export const PLAYER_ADD_BTN_PARENT_SELECTOR = "#layout > ytmusic-player-bar > div.middle-controls.style-scope.ytmusic-player-bar > div.middle-controls-buttons.style-scope.ytmusic-player-bar";
 

@@ -39,7 +39,7 @@ export function watchElement(selector: string, { onAddedCallbacks, onRemovedCall
 	return () => observer.disconnect();
 };
 
-export function watchElementAttributes(selector: string, callback: WatcherAttributesCallback, attributesFilter?: string[]) {
+export function watchElementAttributes(selector: string, callback: WatcherAttributesCallback, attributesFilter?: string[], args?: any) {
 	const element = document.querySelector(selector);
 	if (!element) {
 		return;
@@ -47,10 +47,12 @@ export function watchElementAttributes(selector: string, callback: WatcherAttrib
 
 	const observer = 
 		new MutationObserver((mutations: MutationRecord[], observer: MutationObserver) => { callback(element, mutations, observer); });
+	
 	observer.observe(element, {
 		childList: true,
 		attributeFilter: attributesFilter,
-		subtree: true
+		subtree: true,
+		...args
 	});
 
 	callback(element, [], observer);

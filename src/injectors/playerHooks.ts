@@ -4,9 +4,8 @@ import {
 	PLAYER_AD_STATUS_ATTRIBUTE, 
 	PLAYER_INACTIVE_ATTR_VALUE, 
 	PLAYER_SELECTOR, 
-	PLAYER_STATE_SELECTOR, 
-	PLAYER_THUMBNAIL_ATTRIBUTE, 
-	PLAYER_THUMBNAIL_SELECTOR } from '@/constants/shared'
+	PLAYER_STATE_SELECTOR,
+	PLAYER_TITLE_SELECTOR} from '@/constants/shared'
 import { 
 	watchElement, 
 	watchElementAttributes } from './observerUtils'
@@ -83,9 +82,14 @@ function onPlayerAdded() {
 
 	if (observer) { playerAttObservers.push(observer); }
 
-	observer = watchElementAttributes(PLAYER_THUMBNAIL_SELECTOR, () => {
-		if (_hooks.onMusicChange) { _hooks.onMusicChange(_playerStates); }
-	}, [PLAYER_THUMBNAIL_ATTRIBUTE]);
+	observer = watchElementAttributes(PLAYER_TITLE_SELECTOR, (_el: Element, mutations: MutationRecord[]) => {
+		for (const mutation of mutations) {
+			if (mutation.type === 'characterData' || mutation.type === 'childList') {
+				console.log("Character change")
+				if (_hooks.onMusicChange) { _hooks.onMusicChange(_playerStates); }
+			}
+		}
+	}, [], { characterData: true });
 
 	if (observer) { playerAttObservers.push(observer); }
 
