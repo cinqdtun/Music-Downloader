@@ -6,7 +6,7 @@ import AdmZip from 'adm-zip'
 let binDir = "";
 let tmpDir = "";
 
-const FFMPEG_DOWNLOAD_PATH = "https://github.com/BtbN/FFmpeg-Builds/releases/latest/download";
+const FFMPEG_DOWNLOAD_PATH = "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest";
 const FFMPEG_WINDOWS_X86_64 = "win64";
 const FFMPEG_WINDOWS_ARM64 = "winarm64";
 const FFMPEG_LINUX_X86_64 = "linux64";
