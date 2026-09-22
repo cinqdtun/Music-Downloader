@@ -46,6 +46,8 @@ export default defineConfig(({ command, mode }) => {
 	const isDev = command === "serve";
 	const targetPlatform = process.env.TARGET_PLATFORM || process.platform;
 	const targetArch = process.env.TARGET_ARCH || process.arch;
+	const devTools = process.env.DEVTOOLS !== undefined ? process.env.DEVTOOLS === 'true' : isDev;
+
 	const ext = targetPlatform === "win32" ? ".exe" : "";
 	const devExt = `-${targetPlatform}-${targetArch}${ext}`;
 
@@ -61,7 +63,8 @@ export default defineConfig(({ command, mode }) => {
 				__FFMPEG_PATH__: JSON.stringify(`bin/ffmpeg${devExt}`),
 				__JS_RUNTIME_PATH__: JSON.stringify(`bin/qjs${devExt}`),
 				__YTDLP_PATH__: JSON.stringify(`bin/yt-dlp${devExt}`),
-				__IS_DEV__: JSON.stringify(isDev),
+				__IS_DEV__: isDev,
+				__DEVTOOLS__: devTools
 			},
 			plugins: [
 				dependenciesDownloaderPlugin(targetPlatform, targetArch)

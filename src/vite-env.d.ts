@@ -11,6 +11,7 @@ declare global {
 	const __JS_RUNTIME_PATH__: string;
 	const __YTDLP_PATH__: string;
 	const __IS_DEV__: boolean;
+	const __DEVTOOLS__: boolean;
 }
 
 export {};

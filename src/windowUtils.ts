@@ -176,6 +176,7 @@ export function createMainWindow(ctx: MainContext) {
 			preload: INJECTOR_PATH,
 			contextIsolation: true,
 			nodeIntegration: false,
+			devTools: __DEVTOOLS__
 		},
 	});
 
@@ -183,7 +184,8 @@ export function createMainWindow(ctx: MainContext) {
 		webPreferences: {
 			preload: PRELOAD_PATH,
 			contextIsolation: true,
-			nodeIntegration: false
+			nodeIntegration: false,
+			devTools: __DEVTOOLS__
 		}
 	});
 
@@ -191,7 +193,8 @@ export function createMainWindow(ctx: MainContext) {
 		webPreferences: {
 			preload: PRELOAD_PATH,
 			contextIsolation: true,
-			nodeIntegration: false
+			nodeIntegration: false,
+			devTools: __DEVTOOLS__
 		}
 	});
 
@@ -199,7 +202,8 @@ export function createMainWindow(ctx: MainContext) {
 		webPreferences: {
 			preload: PRELOAD_PATH,
 			contextIsolation: true,
-			nodeIntegration: false
+			nodeIntegration: false,
+			devTools: __DEVTOOLS__
 		}
 	});
 	
